@@ -1,5 +1,5 @@
 ## Air Buster Fix
-This is an IPS patch for **Air Buster** / **Aero Blasters** on the Sega Genesis that fixes the freeze in stage 5 and 6.
+This is an IPS patch for **Air Buster** / **Aero Blasters** on the Sega Genesis that fixes the freeze in stages 4 and 5.
 
 #### Detailed description
 
@@ -21,7 +21,6 @@ direction: RLDU
 ```
 There are 11 functions to jump to, so the valid range for D0 before alignment
 is (0,10).\
-A value of 10 corresponds to right (8) + down (2) which is probably the highest you could get using the original hardware.
-A modern emulator that doesn't filter "wrong" inputs makes it easy to exceed this value and cause a crash.
+A value of 10 corresponds to right (8) + down (2) which is probably the highest you could get using the original hardware. A modern emulator that doesn't filter "wrong" inputs makes it easy to exceed this value and cause a crash.
 
 
